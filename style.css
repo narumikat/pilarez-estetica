@@ -49,10 +49,16 @@ h1 {
     grid-template-columns: 40%;
 }
 
+.box-menu-top {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
 #menu-topo {
-    position: absolute;
-    top: 30px;
+    display: flex;
+    padding-top: 2em;
     white-space: nowrap; /* impede que os menus quebrem */
+    font-size: 18px;
 
 }
 
@@ -81,7 +87,7 @@ nav a:hover {
 .social-menu ul li {
     list-style: none;
     margin-right: 50px;
-    padding-top: 1em;
+    margin-top: 25px;
 
 }
 
@@ -104,7 +110,7 @@ nav a:hover {
     border-radius: 50%;
     background-color: var(--Fonte-secundaria);
     text-align: center;
-    transition: 2s;
+    transition: 1s;
     box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
 }
 
@@ -378,7 +384,7 @@ footer
 footer {
     background:var(--cor-logotipo);
     padding-top: 80px;
-    padding-bottom: 40px;
+    padding-bottom: 70px;
 }
 
 .single-footer {
@@ -443,4 +449,89 @@ footer {
 
 .single-footer ul li a:hover {
     color:var(--fonte-secundaria);
+}
+
+.container-footer {
+  display: grid;
+  grid-template-columns: repeat(3, auto)
+}
+
+.social-menu2 ul {
+  position:relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+.social-menu2 ul li {
+  list-style: none;
+  margin-right: 50px;
+  padding-top: 1em;
+
+}
+
+.social-menu2 ul li .fab {
+  font-size: 25px;
+  line-height: 60px;
+  transition: .2s;
+  color: var(--branco-principal);
+}
+
+.social-menu2 ul li .fab:hover {
+  color: var(--cor-logotipo);
+}
+
+.social-menu2 ul li a {
+  position: relative;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--Fonte-secundaria);
+  text-align: center;
+  transition: 1s;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+}
+
+.social-menu2 ul li:nth-child(1) a:hover {
+  background-color: var(--branco-principal);
+}
+
+.social-menu2 ul li:nth-child(2) a:hover {
+  background-color: var(--branco-principal);
+}
+
+.social-menu2 ul li:nth-child(3) a:hover {
+  background-color: var(--branco-principal);
+}
+
+.botao_contato_bottom {
+  display:inline-block;
+  min-width: 180px;
+  margin:50px 0 0 0;
+  padding: 20px 50px;
+  border-radius: 10px;
+  background-color: var(--cor-logotipo);
+  font-weight: 100;
+  font-size: 20px;
+  color: var(--branco-principal);
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+  transition: 0.7s;
+}
+
+.botao_contato_bottom:hover {
+  background-color: var(--branco-principal);
+  color: var(--cor-logotipo);
+
+}
+
+
+
+.botao_contato_bottom:hover::after {
+  transform: translate(5px, -50px);
+  opacity: 1;
 }
