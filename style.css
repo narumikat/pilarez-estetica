@@ -2,17 +2,16 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    --fonte-principal: #907278;
-    --fonte-secundaria: #6C3469;
-    --cor-logotipo: #B28E9C;
-    --branco-principal: #EAE4E5;
-    --branco-secundario: #E6DCDC;
-    --rosa-secundario: #CAB0B9;
+    --fonte-principal: #E89D00;
+    --fonte-secundaria: #865C16;
+    --cor-logotipo: #FFC64E;
+    --branco-principal: #FFF1C0;
+    --amarelo-secundario: #E9AC4B;
 
   }
 
 body {
-    background: url(bannerLP.jpg);
+    background: url(banner/bannerLP.jpg);
     background-color: var(--branco-principal);
 
     background-repeat: no-repeat;
@@ -148,7 +147,7 @@ nav a:hover {
 }
 
 .botao-contato:hover {
-    background-color: var(--fonte-secundaria);
+    background-color: #E89D00;
     padding-right: 35px;
 }
 
@@ -209,7 +208,7 @@ h2 {
 }
 
 .banner-lp2 {
-    background: url(bannerLP2.jpg);
+    background: url(banner/bannerLP2.jpg);
     background-color: var(--branco-principal);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -382,7 +381,7 @@ footer
 --------------------*/
 
 footer {
-    background:var(--cor-logotipo);
+    background:var(--amarelo-secundario);
     padding-top: 80px;
     padding-bottom: 70px;
 }
@@ -512,7 +511,7 @@ footer {
   margin:50px 0 0 0;
   padding: 20px 50px;
   border-radius: 10px;
-  background-color: var(--cor-logotipo);
+  background-color: #E89D00;
   font-weight: 100;
   font-size: 20px;
   color: var(--branco-principal);
