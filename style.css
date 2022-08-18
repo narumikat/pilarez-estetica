@@ -528,8 +528,6 @@ footer {
 
 }
 
-
-
 .botao_contato_bottom:hover::after {
   transform: translate(5px, -50px);
   opacity: 1;
